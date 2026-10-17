@@ -1,0 +1,68 @@
+#import "@preview/polylux:0.4.0": *
+
+#set text(font: "New Computer Modern", size: 20pt)
+#set page(paper: "presentation-16-9")
+
+#slide[
+  = Synergy Zyklen
+  == Rework of Existing Website: Allowing Independence
+]
+
+#slide[
+  = 1.0 Introduction
+  == 1.1 Project Background
+  #v(1em)
+  *Synergy Zyklen Solution* is a supplier and seller of consumer goods.
+  #v(1em)
+  - Operates on a *sequential cycle-based model*
+  - Tracks all product units sold (company & consumers)
+  - Records each sale by date and time
+  - Each cycle has a defined number of units (e.g., 1–30)
+  - Automatically continues as long as eligible products are sold
+  #v(1em)
+  Currently operates via a *WordPress-based website*.
+  #v(1em)
+  The cycle system code was *"vibe coded"* by the manager (no coding background).
+]
+
+#slide[
+  = 1.2 Problem Statement
+  #v(1em)
+  - *WordPress limitations:* Plugins cause restrictions and require extra payment for certain features
+  - *Difficult to expand* business
+  - *Unreadable code:* Vibe coded by someone without coding experience
+  - *Not suitable for long-term use*
+  - *Resource-heavy:* Relies on math, no separate database to track ongoing cycles
+  - *Manual labor:* Manager manually inputs cashback into user wallets after each cycle
+  - *Risk of errors* due to manual input
+]
+
+#slide[
+  = 1.3 Project Objective
+  #v(1em)
+  The objective of this project is to:
+  #v(1em)
+  1. *Allow the code to run independently* without the use of WordPress
+  2. *Rewrite the cycle code* for cleaner, more maintainable code
+  3. *Allow full automation* of the cycle and cashback rewards
+]
+
+#slide[
+  = 2.0 Literature Review
+  #v(1em)
+  (Nak letak apa?)
+  #v(1em)
+  (Based on copyright?)
+  #v(1em)
+  == 2.1 Feasibility Studies
+  #v(1em)
+  (Still required?)
+]
+
+#slide[
+  = Main Concern
+  #v(1em)
+  - Will GMI retain right to code?
+  #v(1em)
+  - Will gmi allow outside stakeholder instead of own idea?
+]

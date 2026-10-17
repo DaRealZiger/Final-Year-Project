@@ -1,0 +1,21 @@
+Briefing Idea individual proposal masing2 kpd sir
+
+# Student Ideas
+Zahirul: VR car anatomy for education OR inter-car communication via mobile app linked to Android CarPlay.
+Alya: Wardrobe suggestion app based on skin tone and indexed clothes.
+Naufal: IoT network analyzer for virus-infected IoT using ML OR ML-based malware labeler.
+
+# Supervisor’s Suggestions
+Certificate generator (digital/physical via templates).
+Plant soil monitor dashboard (ESP32 + sensors).
+Smart motion assessment for construction workers (Nintendo Joy-Con).
+Train monitoring system for RapidKL.
+AI health monitoring (symptom input => diagnosis & medication suggestions).
+
+# Proposed action by students
+Evaluate technical complexity and approachability of all ideas.
+Shortlist viable concepts for individual reports.
+
+# Agenda for the next supervision
+Finalize individual project idea selections.
+Submit Individual Report by deadline.

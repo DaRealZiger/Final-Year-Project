@@ -1,0 +1,174 @@
+Start:
+1. Idea mana korang paling suka?
+    - Nopal, VR sbb mcm buat game
+    - Zahirul, idea [VR + Fashion]
+    - Alya nak idea paling senang nak buat
+2. Idea mana rasa paling bole bawak?
+    - Naufal, Semua idea rasa bole bawak, cuma nak jelaskan skop dan spesifikasi
+    - Zahirul, dua2 [VR + Fashion], IoT market x besar
+    - Alya nak idea paling senang nak buat
+3. Atau ade idea lain nak buat?
+    - Backup plan: Ceritificate generator
+
+    - Idea Zahirul: None
+
+    - Idea Nopal: Malware Scanner
+      - Concept: Virus Scanner utk File
+        - Detail: Dia pakai Virtual Machine pastu dia test malware dan collect data
+        - Misconception: Bukan defend Windows, tlg Cybersecurity Researchers buat kerja
+        - Relevance Soft Eng: Dia pakai Machine Learning Model
+                              utk label jenis malware ikut data yg dicollect
+
+    - Idea Alya: Dobby Laundry
+      - Problem: Kerosakan + Internet
+          - Detail: Scan QR utk mesin basuh perlu WIFI
+      - Solution: Cuba buat tanpa WIFI
+          - Question: Cash x dikira sebagai tanpa WIFI?
+            - Answer: Paling senang dicuri
+          - Question: Tanpa WIFI, tapi dengan apa?
+
+Proposals:
+1. (Alya)    AI-Powered Fashion Scanner
+2. (Zahirul) Chassis Insight VR
+3. (Naufal)  IoT Intrusion Detection System Gateway
+
+Alya nak FYP ni, laptop kita bole carry
+
+Goal today: compare feasibility + relevance
+(not pick yet)
+
+Bawah ade issue oleh Claude
+ke nak baca setiap proposal
+dan cari issue sendiri?
+
+
+Proposal 1:
+AI-Powered Fashion Scanner
+
+Idea:
+scan clothing ->
+AI reads category/color ->
+match against digital wardrobe ->
+outfit suggestions
+(+ AI ChatBot utk customize suggestion)
+
+Issues to raise:
+- "AI" part is just category + color classification, quite shallow
+- outfit "matching" - rule based or actually trained? changes
+  workload a lot (Machine Learning Model or Algorithm?)
+- image recognition on clothes (angles, lighting, overlap) is
+  known to be finicky, could eat the whole timeline
+    - Online catalog: Bole lookup online database utk baju
+      - Issue: Database nak dpt mana? Contract atau scrape dan buat database sendiri
+- mostly Flutter + Firebase CRUD app with AI bolted on top
+  - Generic tapi bole argue, paling banyak orang buat jadi senang nak buat
+
+Ask: does anyone on the team have ML/CV experience?
+CV --> Computer Vision
+(kita belajar ML sem5 x silap kata sir syamiel)
+
+
+Proposal 2: Chassis Insight VR
+
+Idea: VR app to explore car internals (engine, pistons) for
+automotive students
+
+Zahirul ade scattered understanding, bole belajar online
+{Scope Bonet/Hood (Main priority), bende lain nanti }
+
+Issues to raise:
+- hardware listed is unrealistic for a diploma FYP: Varjo XR-4
+  headset + RTX 5090 GPU, nobody likely owns/can access this
+- "real-time physics rendering" of engine internals in Unreal +
+  C++ is a huge scope for one semester
+- leans more Game Dev / 3D Animation than Software Engineering,
+  examiners may question SE relevance
+    - How to justify? (Tunggu Sir punya input)
+      - Networking: 1 player ---> multiplayer, class enviroment
+      - Software Engineering Methodology
+        - Testing, Requirements, Design
+          - Kenapa x buat software lain kalau nak pakai methodology ni?
+- how much of "simulation" is real physics vs a pre-baked
+  animation dressed up as one?
+
+Ask: does anyone have Unreal Engine / VR dev experience, and do
+we have any VR headset access at all?
+
+Bincang:
+Harga VR?
+- Harga menaik sbb RAM
+- Dalam sekitar Min: RM 1,700 | Max: RM 3,000 (Check Shopee Laptop)
+Budget RM 3000, satu headset 1,700, tinggal 1,300
+- sbb nanti kene serah VR headset ni
+- Satu team 1 headset susah jgk, sbb test/deploy kat hardware VR jadi susah
+  - Nopal cuba nego beli satu personal VR headset utk development
+    - Paling 2 headset, 1 alya pegang dorm perempuan, 1 Zahirul+Nopal share
+Demi graphics, tukar Unreal kpd Godot:
+- Graphic out of the box, x se-latest tapi good enough
+  - Bole custom Godot, tapi makan masa sikit tapi mmg Addon/GDExtension/modules
+Education graphics:
+- Berapa realistic kita nak?
+  - AI ckp low poly model (sng nak render) dan stylized sikit (apa maksud stylized)
+    - Justification: Simpler models have lower visual cognive load to retension
+                     Focus pada portability, apa2 headset bole run, baiki isu scaling
+Model/Animasi nak dapat mana:
+- kalau low poly stylized models, makna kita ada custom model requirement
+  - makan masa kalau cari model free sbb ade requirement
+    - kita boleh upah orang utk model custom tapi mahal x mahal xtau ah
+
+Proposal 3: IoT Intrusion Detection System Gateway
+
+Idea: Raspberry Pi sits between IoT devices and router, sniffs
+traffic, detects attacks (rule-based + ML: Random Forest /
+Isolation Forest), auto-blocks via iptables, shows alerts on a
+web dashboard
+
+[Claude yang bagi aq idea dan dia sendiri suka idea dia so...]
+This one is the most "normal" scope of the three - clear
+hardware (just a Pi), clear software stack, demoable live
+
+Issues to raise:
+- needs a labeled attack dataset to train the ML models on,
+  where is that coming from? (public datasets exist but may not
+  match real home IoT traffic)
+- claims specific targets (<50ms/packet, <60% CPU) - need to
+  actually benchmark this, not just assume it works
+- running inline packet inspection + ML inference on a Pi 4 in
+  real time is optimistic, may need to cut scope (e.g. sample
+  packets instead of inspecting all)
+
+Issue bincang:
+Hardware bottleneck = Nak run ML model dkt raspberry Pi
+Optimize latency    = Nak run ML model dkt raspberry Pi
+Testing             = Pi akan jadi WiFi IoT, kite connect pakai laptop lepas
+                      pakai software jgk, simulate perangai malicious activity
+                      yang di label (tapi disorok label dari Pi)
+
+                      Pi akan detect malicious activity dan labelkan
+                      Pastu cross-check label dia dan jawapan kita (label)
+Harga               = Mahal dan kecik, senang rosak, (RM 300 - 900)
+                      Rosak dari short-circuit, kurang confiden
+                      Nopal software boleh, hardware susah
+
+Ask: does anyone have networking/Linux/embedded experience? Who
+owns or can buy a Pi 4 quickly?
+(Linux aq ade, embedded x jadi raspberry pi guna linux carry)
+(ESP32, guna RTOS atau SDK x pernah)
+
+
+General agenda items
+
+- each proposer states: what is the cut-down MVP if time runs out
+- hardware/software access check - who can actually get the
+  required gear this week
+- skillset match - CV/ML vs VR/Unreal vs networking/security
+- which one most clearly hits the SE rubric (PO2, PO6, technical
+  contribution marks)
+- decide how we choose today: vote, or discuss until consensus
+- if picked today, assign next actions per person
+
+    
+Conclusion utk log book:
+Semua orang favor kpd project? VR
+  - Tapi issue budget, hardware, 3D model, graphic-to-realism ratio
+Backup plan: Ceritificate generator

@@ -1,0 +1,106 @@
+FYP Proposal Presentation Snippet
+
+>Proposed Project Title & Team Information
+
+Project Title: IoT Intrusion Detection System Gateway
+
+>Problem Statements (3 Core Problems)
+
+1. Resource Constraints
+   - Existing intrusion detection systems are designed for enterprise networks and demand substantial computing resources.
+   - Cannot run effectively on small edge devices commonly used in home IoT setups.
+   - Leaves home environments unprotected.
+
+2. Performance Bottlenecks
+   - Real-time packet inspection on resource-constrained hardware introduces latency issues.
+   - Processing network traffic inline without causing unacceptable delay requires careful optimization.
+   - Detection pipeline reliability is challenging on limited hardware.
+
+3. Limited Detection Capabilities
+   - Signature-based detection alone is insufficient against new or evolving attacks.
+   - Machine learning offers solutions for anomaly detection but introduces challenges:
+     - Feature extraction overhead
+     - Inference speed constraints
+     - Pipeline reliability on edge devices.
+
+
+>Project Objectives (Solutions offered)
+
+1. Design Lightweight IDS
+   - Develop an intrusion detection system capable of running efficiently on a Raspberry Pi 4 (4GB RAM).
+   - Ensure real-time performance with minimal resource consumption.
+
+2. Performance Targets
+   - Achieve target latency of < 50ms per packet.
+   - Maintain CPU usage < 60% during real-time packet capture and analysis.
+   - Optimize for constrained hardware environment.
+
+3. Hybrid Detection Engine
+   - Combine signature-based and machine learning techniques.
+   - Use Random Forest and Isolation Forest models.
+   - Maintain high detection rate while remaining computationally feasible for target platform.
+
+
+>Product Comparison
+
+Comparison with Existing Solutions
+
+Feature                    | This Project                      | Enterprise IDS (Snort/Suricata) | Commercial Solutions
+---------------------------|-----------------------------------|---------------------------------|----------------------
+Target Platform            | Raspberry Pi (Edge)               | High-end Servers                | Consumer Hardware
+Resource Usage             | Optimized (<60% CPU)              | High Resource Demand            | Moderate
+ML Integration             | ✅ Hybrid (RF + Isolation Forest) | ❌ Rule-based only              | ❌ Limited
+Live Dashboard             | ✅ FastAPI + SQLite               | ✅                              | ✅
+Real-time Blocking         | ✅ iptables integration           | ✅                              | ✅
+IoT Focus                  | ✅ Gateway/AP mode                | ❌ General network              | ⚠️ Limited
+
+
+Unique Value Proposition
+- First lightweight hybrid ML-based IDS designed specifically for IoT edge gateways.
+- Proof-of-concept demonstrating ML inference on Raspberry Pi.
+- Combines security, ML, and embedded systems in one project.
+
+Market Comparison
+- Uniqueness: Only open-source, DIY IoT gateway with ML-based intrusion detection.
+- Competitive Advantage: Educational value, flexible ML integration.
+- Target Users: Home users, small offices, researchers, students.
+
+
+Supporting Data (from Report)
+
+Hardware Specifications
+- Processor: Raspberry Pi 4 Model B (4GB RAM)
+- Storage: SanDisk Extreme 32GB MicroSD (A2 rated)
+- Network: Built-in Ethernet + USB Wi-Fi dongle (AP mode)
+- Power: Official USB-C Power Supply (5.1V/3A)
+- Cooling: Enclosure with heatsink/fan
+
+Software Stack
+- OS: Raspberry Pi OS
+- Language: Python 3
+- Packet Capture: Scapy/libpcap
+- ML Library: scikit-learn
+- Backend: FastAPI
+- Database: SQLite
+- Networking: hostapd, dnsmasq, iptables
+
+ML Models
+- Random Forest: For classification
+- Isolation Forest: For anomaly detection
+- Dataset: CICIoT2023 (labeled IoT attack traffic)
+
+Detection Pipeline
+1. Live packet capture from Wi-Fi interface
+2. Flow-level feature extraction (packet size, protocol flags, packet frequency)
+3. Rule-based detection (fast path)
+4. ML-based detection (Random Forest)
+5. Fallback anomaly detection (Isolation Forest)
+6. Automatic blocking via iptables
+7. Event logging to SQLite
+8. Live dashboard visualization
+
+
+Notes
+Name commercial solutions (they may ask for examples)
+Tukar nama
+Use 5ws

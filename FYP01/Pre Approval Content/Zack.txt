@@ -1,0 +1,25 @@
+Project Title: Chasis Insight
+
+Problem Statement:
+    -Critical skill gap for students
+        -reliant on theoretical studying methods.
+        -Lack of an interactive digital platform 
+    -Budget Restraints
+        -Lack of software requires institues to buy real cars for practical training
+        -Lack of space and budget cause students needing to share
+    -Observation difficulties
+        -Some part are far too small making it hard for students to see
+        -Can only require on videos to see internal workings of car
+
+Project Objective
+    -Create an interactive digital platform
+    -Visualise internal workings and small parts
+
+    -Scalable and accesible to all institutes, able to hotswap and experiment without much cost
+
+
+Notes:
+Add comparison
+Highlight it's not a gaming product
+Introduction
+Use 5W's

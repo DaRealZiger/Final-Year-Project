@@ -1,0 +1,30 @@
+Selasa 22 Sep 2026 17:22:56 +08
+
+Each week doesnt need meeting
+
+Minggu Depan Progress Presentation Week
+present kepada examiner
+
+Design Report wait for response
+Issue budget/cost, kepada 3D model car file
+
+Sir gave example report in #text-sv
+FYPReport_SharifahNina.pdf
+Design Report must have: (will be used for FYP Report)
+Title
+Table of Contents
+List of Figures
+List of Table
+Chapter 1: Introduction
+	- 1.2 Problem Statement (PS): 3 points only 
+    - (find on Google Scholar, 
+       find similar, 
+       cth: boleh letak report 2004 yg kurangnya car simulation 
+       dan letak dlm problem statement)
+
+	- 1.3 Objective: 3 points only 
+    - (correspond to PS? assume from report example given in #text-sv discord)
+	- 1.5 Signifance (terpulang) (basically what the results are the project is done)
+	- 1.6 Summary
+
+Do those, then next parts of report later in next meeting

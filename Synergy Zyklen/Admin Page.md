@@ -1,0 +1,6 @@
+- [[POS]]
+- Check users
+    - Wallet
+- Track Inventory
+- CRUD menu
+- Stats

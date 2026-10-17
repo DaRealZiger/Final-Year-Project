@@ -1,0 +1,7 @@
+----Formatting----
+Font:Times new roman 
+Font Size:12
+Spacing: 1.5
+Heading:
+Sub-Heading:
+Justify

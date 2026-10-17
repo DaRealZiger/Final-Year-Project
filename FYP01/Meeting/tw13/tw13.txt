@@ -1,0 +1,24 @@
+!!! SCREENSHOT !!!
+
+Today's agenda
+
+[ ] Whats today's meeting about? (Adding items to the list)
+[ ] Is Design Report still needed? Assume Progress Presentation Report main priority?
+[ ] Google Form only has 1 respondent. Does data need to be faked?
+	- Review the respondents' answer?
+[ ] Skim report dgn Sir
+[ ] Double Check SDLC
+[ ] Rough sketch of use case diagram
+
+Notes
+- next week progress presentation present, unknown specific day
+- design report, perlu ke? standby. prioritize progress report first
+- google form. fabricate data? leave as it is, find more respondent?
+	- expose to more students outside auto-tronic and outside gmi student
+		- if so, need to re-word questions/survey
+	- re-share to autotronic student
+- panjangkan huraian projek objektif progress report 
+- panjangkan huraian sdlc progress report 
+- use case diagram/specification diberi contoh
+- testing model/tools ikut waterfall, perenggan
+- stakeholder kita GMI

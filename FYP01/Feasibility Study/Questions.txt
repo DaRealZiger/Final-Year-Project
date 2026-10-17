@@ -1,0 +1,31 @@
+Demographic
+   Gender
+   Department
+   Course
+
+Yes/No
+   -Would you prefer accuracy but with slower performance or less accurate but higher performance (both will have as close accuracy to real world)(Need to have picture to show difference)
+   -What do you prefer in software's simulation?
+      True simulation (allow mistakes)
+      Pseudo-simulation (animation)
+
+Likert Scale
+   -Do you think the frequency is enough for real-world experience. Scale 1-5 Not enough - Enough
+   -Do you think this software will be able to help with education with hands on practical. Scale 1-5 Not Helpful- Helpful  
+
+Ranking
+   -Prioritize Features
+      Simulation
+      Hot-swappable
+      Android Port
+      Allow Mistakes
+
+Category (Range)
+   -How frequently do you get to do practical on automotive machines in a week.
+     1
+     2
+     3
+     4
+     5+
+
+Open Ended

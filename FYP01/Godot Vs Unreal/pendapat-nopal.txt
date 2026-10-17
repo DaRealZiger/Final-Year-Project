@@ -1,0 +1,45 @@
+Idea Alya
+
+Utk issue camera ambik input tu, kita bole campur IoT
+Kamera letak kat pintu wardrobe ada dalam wardobe sekali
+dgn lampu
+
+jadi:
+- lighting consistent
+- tambah scope sikit (tapi scopee creep pulak eh)
+
+Tapi data ah utk AI model dan database
+
+Nak dapat mana model (kalau boleh dah siap2 label)
+
+Idea Zahirul
+
+Utk issue hardware, boleh downgrade
+Utk unreal pulak, hardware kita xleh run bende tu
+
+kalau bole nak elak PC VR
+utk senang consumer store headset dia
+
+tapi graphic android ah kalau downgrade sbb budget
+
+Tapi Car 3D model ah
+
+1. nak dapat mana (CAD files ke?)
+
+aq tau kat sketchfab jela, parts ade
+cuma dia x integrate sama sendiri
+setiap parts to dia asing
+./subsystem_models.txt
+
+extra stuff utk VR dari nopal 
+
+aq propose godot, argument di ./godot-vs-unreal.txt
+
+dan ade anti-godot argument di ./godot-hater.txt
+
+dan godot demo (Third Person Shooter)
+[show BTOP importing these files (filter: Godot)]
+tapi lag laptop aq ah sbb integrated graphics je
+
+godot review (2 weeks ago)
+https://www.youtube.com/watch?v=7GqmVpce2ec

@@ -1,0 +1,27 @@
+(tree .)
+├── README.txt
+├── tw1 # Ms Ratna & Lekir Academy AI
+│   ├── img.txt
+│   └── tw1.txt
+├── tw2 # Pertama Jumpa Sir, briefing Idea
+│   ├── tw2.png
+│   └── tw2.txt
+├── tw3 # Ade meeting, tapi x ingat apa yg discuss
+│   └── readme.txt
+├── tw4 # Ade meeting tapi x ingat jgk
+│   └── readme.txt
+├── tw5 # Sir xde, hold meeting sendiri tapi x ingat apa yg discuss
+│   └── readme.txt
+├── tw6 # Meeting ade, tapi Alya xde sbb sakit
+│   ├── meeting-notes.txt
+│   └── meeting-proof.webp
+├── tw7 # Rasanya 2 minggu mmg xde meeting
+│   └── readme.txt
+├── tw8 # Ni pun xde meeting
+│   └── readme.txt
+├── tw9
+│   ├── meeting-notes.txt
+│   └── meeting-proof.webp
+└─── tw10
+    ├── meeting-notes.txt
+    └── meeting-proof.webp

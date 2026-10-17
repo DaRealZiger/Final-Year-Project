@@ -1,0 +1,22 @@
+Tue Oct 13 17:27:41 +08 2026
+Todays agenda
+- Check report
+- Godot Testing Framework
+  - https://github.com/godot-gdunit-labs/gdUnit4
+  - https://github.com/bitwes/Gut
+
+
+Testing:
+- Hardware
+  - Personal Hardware: Processor, RAM, storage, OS
+
+Review/Check Progress Report essentially
+Lots of notes in Google Doc: Progress Report
+- Project Objective revised
+- Literature Review text made
+- Methodology Software refer to an Example Sir given
+- Table label caption
+- Example Specification of Hardware & Software
+- Software Testing & Tools
+- 3.1 Principal Operation
+- Conclusion sir made example

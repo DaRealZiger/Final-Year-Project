@@ -1,0 +1,56 @@
+Meeting TW10
+Selasa 15 Sep 2026 17:12:30 +08
+---------------------
+Google Form - Feasibility Study
+
+Put introduction at top in google form
+
+Sir adjustments/suggestions:
+If you are interesed in the project, you could contact us through these email
+...
+
+Age
+Age range?
+
+Which would you prefer the simulation:
+[Change to]
+Do you prefer hands-on training through physical, digital or mixed?
+
+Graphics-wise, which of the two would you prioritize
+[Change to]
+[Restrict questions so we can accomodate user requests (like true simulation unable to do)]
+
+Which of these features, would you prioritize
+[Change to]
+(Jangan masukkan report, only during FYP2)
+
+Open-Ended questions
+Suggestions/Criticism
+[Change to]
+Suggestions?
+---------------------
+
+At TW9, Examiner wants to see Feasibility Study data
+
+For prototype, just use Blender and Screenshot
+
+Design Report TOC:
+Introduction
+Problem Statement
+Objective
+Project Features
+Case study (Google Form)
+Cost (Budget)
+Prototype (Screenshot)
+	- Kita kene buat prototype betul, bukan gambar software orang lain
+Conclusion
+
+Feasibility Study x payah report
+
+FYP Progress Presentation, present to examiner:
+Slide yg dibetulkan
+Report yg dibetulkan
+
+Sponsor:
+Contact lalu apa? Dia akan mintak phone number
+Dia akan contact Student

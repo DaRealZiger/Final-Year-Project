@@ -1,0 +1,104 @@
+Reasons NOT to use Godot for Chassis Insight VR
+===============================================
+
+1. Smaller VR ecosystem
+-----------------------
+Unreal and Unity have years of VR tutorials, plugins, examples and
+commercial support.
+
+Godot has improved rapidly, but you'll find fewer answers when something
+breaks. (AI x train kat forum, so debug dgn AI mungkin susah)
+
+2. CAD workflow is weaker
+-------------------------
+Automotive companies typically work with:
+- SolidWorks
+- CATIA
+- Siemens NX
+
+Unreal has mature Datasmith and enterprise pipelines.
+
+Godot generally requires converting assets to glTF or FBX first, which
+can lose metadata and complicate updates.
+
+3. Graphics
+-----------
+Godot graphics are good.
+
+Unreal graphics are excellent.
+
+If your supervisor expects "wow" visuals, Unreal has:
+- Nanite
+- Lumen
+- Virtual Shadow Maps
+- Movie-quality renderer
+
+Godot cannot compete there.
+
+4. Industry recognition
+-----------------------
+Many automotive, architecture and simulation companies already use Unreal.
+
+Knowing Unreal is a more recognizable skill on a CV for XR work.
+
+5. Performance on massive scenes
+--------------------------------
+If the project grows to:
+- complete vehicle
+- transmission
+- suspension
+- engine internals
+- high-poly CAD
+
+Unreal generally scales better.
+
+6. Enterprise features
+----------------------
+Professional VR often needs:
+- multi-user
+- Digital Twins
+- CAD integration
+- simulation frameworks
+
+Godot is not designed primarily for these markets.
+Godot Indie Game Engine
+	Sesuai sbb kita 3 orang
+	3D game ade, dorang mmg power dan ubah engine
+
+7. Documentation
+----------------
+Godot documentation is excellent.
+
+VR-specific documentation is much smaller than Unreal's.
+
+Many advanced topics require digging through GitHub issues or Discord.
+
+8. Plugins
+----------
+Unreal Marketplace contains thousands of VR assets.
+
+Godot's Asset Library is much smaller.
+
+You may need to implement features yourself.
+
+9. Future expansion
+-------------------
+Today's project:
+- educational viewer
+
+Tomorrow:
+- multiplayer
+- instructor controls
+- networking
+- realistic physics
+- digital twin
+
+Unreal has a smoother upgrade path.
+
+10. Supervisor perception
+--------------------------
+Fair or not, some lecturers equate Unreal with
+"professional VR" and Godot with
+"indie game engine."
+
+Presentation matters.

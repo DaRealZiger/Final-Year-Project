@@ -1,0 +1,77 @@
+Chassis Insight VR - Subsystem Notes
+
+Pick 2 max for FYP scope. Everything else = future work in report.
+
+Mechanical (good for explode + rigid part animation)
+- Suspension over bumps
+- Steering: wheel turn -> rack/pinion -> tie rod -> wheel angle
+- Braking: pedal -> booster -> caliper clamps disc
+- Transmission/gearbox: gear engaging
+- Differential: power split on a turn
+- Clutch engage/disengage (manual)
+- Timing belt/chain: crank turning valves in sync
+
+Fluid/energy flow (good for animated arrows/particles)
+- Fuel: tank -> pump -> injector -> combustion
+- Cooling: coolant through engine -> radiator -> back
+- Oil lubrication loop: pump -> parts -> sump
+- Exhaust: combustion -> manifold -> catalytic converter -> pipe
+
+Electrical (weak content, skip unless padding feature list)
+- Battery -> alternator loop
+- Battery -> headlights
+- Dashboard (mostly UI, little 3D value)
+
+Recommended pick: 1 mechanical (steering or suspension)
+                 + 1 fluid/flow (fuel->combustion or cooling)
+
+
+Models found (verify license on page before using, check
+part-separation in viewer before download)
+
+Suspension:
+- Sketchfab "Suspension Coil" by jolle.kemppainen
+  https://sketchfab.com/3d-models/suspension-coil-f9e9d2bd5ab143d3bd64bd2c27e9d9cb
+  stated free to use, generic, not brand specific
+
+- Sketchfab "Suspension" (shock + spring) by BumpkinCZ
+  https://sketchfab.com/3d-models/suspension-1053938560284715980e6b6acdc1cb48
+  not brand specific, stated usable for any car
+
+- Sketchfab "Automotive Suspension System" by Altrous
+  https://sketchfab.com/3d-models/automotive-suspension-system-dc836274e64046e58dce91018f188645
+  not specific to any car model/brand
+
+- Sketchfab tag browse page (more options, filter by license)
+  https://sketchfab.com/tags/suspension
+  https://sketchfab.com/tags/car-suspension
+
+Steering / rack and pinion:
+- Sketchfab "rack and pinion" by ravindra.mohan09
+  https://sketchfab.com/3d-models/rack-and-pinion-9b199b652a874321980e0d2c19d5fd96
+  generic mechanical part, good candidate
+
+- Sketchfab "Mechanical steering rack" by Artec 3D
+  https://sketchfab.com/3d-models/mechanical-steering-rack-1d346c87c5644251abe85ed0569131f8
+  3D scan, check license carefully (Artec 3D showcase model,
+  may be restricted, check page)
+
+- Sketchfab tag browse page
+  https://sketchfab.com/tags/rack_and_pinion
+  https://sketchfab.com/tags/pinion
+
+- Printables "Rack and pinion demonstration" by Wietse (STL,
+  3D-print oriented but shows part breakdown clearly)
+  https://www.printables.com/model/322882-rack-and-pinion
+
+
+Notes
+- None of these confirmed as already Godot-ready (glTF format),
+  check each download page for available formats before commit
+- "Not brand specific" language on suspension models is good,
+  means no real-car IP concern
+- Still need to search separately for: fuel system, cooling
+  system, combustion animation models once mechanical pick is
+  locked in
+- Double check actual license type on each page (CC0 vs CC-BY vs
+  "free to download" which is NOT the same as open license)

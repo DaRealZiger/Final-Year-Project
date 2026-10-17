@@ -1,0 +1,204 @@
+#set page(width: 16cm, height: 9cm, margin: 0.8cm)
+#set text(size: 13pt)
+#set heading(numbering: none)
+
+#let slide(title, content) = {
+  set align(left)
+  heading(level: 1, title)
+  v(0.3em)
+  content
+  pagebreak()
+}
+
+// Title Slide
+#align(center)[
+  #v(1.5cm)
+  #text(size: 22pt, weight: "bold")[Certificate Generator]
+  #v(0.5cm)
+  #text(size: 15pt)[Web-Based Certificate Generator using Flutter Web]
+]
+#pagebreak()
+
+#slide("1.0 Introduction")[
+  *1.1 Project Background*
+  - Certificates are widely used for recognition, participation, and completion
+  - Manual preparation involves design, data entry, and document production
+  - Existing tools require combining multiple applications for design, data, and generation
+  - *Proposed solution:* A web-based certificate generator using Flutter Web
+    - Layered certificate design + template reuse
+    - Manual entry and CSV import for recipient data
+    - Batch generation into a single PDF
+    - User accounts for persistent storage
+]
+
+#slide("1.2 Problem Statement")[
+  - *Repetitive manual effort:* Each certificate is edited individually → errors in names, dates, and positioning
+  - *Poor reuse and management:* Templates and recipient records scattered across files/apps
+  - *Scaling issues:* Large groups need reliable data-to-field association
+  - *Need:* Centralized, automated system with consistent PDF output
+]
+
+#slide("1.3 Project Objectives")[
+  + Develop a *web-based certificate generator* with layered design elements and reusable templates
+  + Implement a *centralized management system* for templates and recipient data via user accounts
+  + Develop *individual and batch generation* supporting manual entry and CSV imports → consistent PDF output
+]
+
+#slide("2.0 Literature Review")[
+  - Reviews existing approaches, technologies, and systems for certificate generation
+  - Focus areas:
+    - Template customization
+    - Recipient data management
+    - Automated PDF generation
+  - Examines existing applications and development technologies
+  - Identifies relevant features, limitations, and opportunities
+  - *Note:* Research based on articles, papers, and competitor analysis (e.g., alternativeTo.com batch certificate generators)
+]
+
+#slide("2.1 Feasibility Studies")[
+  - *(Section placeholder — to be completed)*
+  - Key feasibility dimensions to cover:
+    - Technical feasibility
+    - Economic feasibility
+    - Operational feasibility
+    - Schedule feasibility
+]
+
+#slide("3.0 Project Methodology")[
+  - *Selected SDLC Model:* Throwaway Prototyping
+  - Rationale: Test technical features before finalizing design
+  - Reduces risks in:
+    - Layered certificate editing
+    - CSV data processing
+    - PDF generation
+]
+
+#slide("3.1.1 SDLC Phases")[
+  + *Planning & Requirements Analysis*
+    - Identify requirements: template customization, authentication, data management, generation
+  + *Prototype Design & Construction*
+    - Test text positioning, layered elements, CSV imports, PDF generation
+  + *Prototype Evaluation*
+    - Identify technical issues; refine final design
+  + *Final System Design & Implementation*
+    - Build with Flutter Web + self-hosted backend
+    - Discard prototypes; apply lessons learned
+]
+
+#slide("3.1 Principal of Operation")[
+  - Users log in to access saved templates and recipient data
+  - *Design:* Create from scratch with layered elements or upload existing background
+  - *Customize:* Position and format text elements (names, titles, dates)
+  - *Save:* Store templates for future use
+  - *Data:* Manual entry or CSV import
+  - *Generate:* Apply data to template → individual or batch
+  - *Output:* Combined PDF for review, printing, and distribution
+]
+
+#slide("3.1.2 Use Case Diagram")[
+  - *(Diagram placeholder — insert use case diagram)*
+  - Key actors:
+    - Student / User
+    - Admin
+    - Backend Service
+  - Main use cases:
+    - UC01: User Login
+    - Create/Manage Templates
+    - Manage Recipient Data
+    - CSV Import
+    - Generate Individual Certificate
+    - Generate Batch Certificates
+    - Export/Print PDF
+    - Admin Account Management
+    - Backend Service Operations
+]
+
+#slide("3.1.3 Use Case Specification (Summary)")[
+  *UC01: User Login*
+  - Actor: Student / User
+  - Precondition: Registered account
+  - Flow: Open app → enter credentials → validate → authenticate → dashboard
+  - Postcondition: Access to saved templates and recipient data
+
+  *UC: CSV Import*
+  - Actor: Student / User
+  - Precondition: Logged in; CSV file available
+  - Flow: Upload → read headers → map fields → validate → preview → confirm → save
+  - Postcondition: Valid records imported for generation
+]
+
+#slide("3.1.3 Use Case Specification (Cont.)")[
+  *UC: Generate Individual Certificate*
+  - Select template → select/enter recipient → validate → insert details → preview → export PDF
+
+  *UC: Generate Batch Certificates*
+  - Select template → select dataset/CSV → validate → preview → confirm → apply to each record → combine into one PDF → export
+
+  *UC: Export / Print PDF*
+  - Review pages → select pages (if supported) → export or print
+
+  *UC: Admin Account Management*
+  - Search/select account → view info → deactivate/delete → confirm → apply change
+]
+
+#slide("3.2.1 Software Specification")[
+  #table(
+    columns: (auto, auto, 1fr),
+    stroke: 0.5pt,
+    [*Software*], [*Version*], [*Justification*],
+    [Chromium Browser], [Latest stable], [Runs Flutter Web app; preview, uploads, PDF downloads],
+    [Flutter SDK], [Stable release], [Develop UI and application logic],
+    [Dart SDK], [Bundled with Flutter], [Implement logic and data processing],
+    [VS Code], [Latest stable], [Development environment],
+    [Supabase], [Stable self-hosted], [Auth, database, file storage],
+    [PostgreSQL], [Supported version], [Store structured application data],
+    [Git], [Latest stable], [Version control],
+  )
+]
+
+#slide("3.2.2 Hardware Specification")[
+  #table(
+    columns: (auto, 1fr),
+    stroke: 0.5pt,
+    [*Hardware*], [*Minimum Requirements*],
+    [CPU], [Dual-core 64-bit, 2.0 GHz or equivalent],
+    [RAM], [4 GB],
+    [Drive Storage], [10 GB available],
+    [Operating System], [Windows 10+, Linux, or macOS],
+    [Additional Notes], [Modern browser; internet/local network for backend access],
+  )
+]
+
+#slide("4.0 Testing Methodology")[
+  *4.1 Testing Model*
+  - *(To be completed — e.g., unit, integration, system, UAT)*
+  - Focus areas:
+    - Template design and customization
+    - CSV import and data mapping
+    - Individual and batch generation
+    - PDF output consistency
+    - Authentication and data persistence
+
+  *4.2 Testing Tools*
+  - *(To be completed — e.g., Flutter test, browser dev tools, Postman, etc.)*
+]
+
+#slide("5.0 Conclusion")[
+  - Proposed a *web-based certificate generator* using Flutter Web
+  - Addresses manual effort, inconsistency, and poor reuse
+  - Key features:
+    - Layered design + reusable templates
+    - Centralized recipient data management
+    - Manual + CSV-based individual/batch generation
+    - Consistent PDF output
+  - Methodology: *Throwaway Prototyping* to reduce technical risk
+  - Expected outcome: Simplified, organized, and reliable certificate preparation
+]
+
+// Closing Slide
+#align(center)[
+  #v(2.5cm)
+  #text(size: 24pt, weight: "bold")[Thank You]
+  #v(1cm)
+  #text(size: 14pt)[Questions & Discussion]
+]

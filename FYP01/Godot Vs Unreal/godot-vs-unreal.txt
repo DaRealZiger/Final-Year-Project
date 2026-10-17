@@ -1,0 +1,67 @@
+Engine Comparison
+
+Godot
+------
+Pros
++ Open Source (Modifiable game engine --> modules + GDExtension + Addon)
++ Lightweight (Unreal 40GB, Godot 300MB)
++ Fast iteration (game "compiles" quickly)
++ Easy deployment
+	+ (OpenXR, --> OpenGL, support byk graphic, support byk VR headset)
++ Lower hardware requirements
++ Good enough graphics
++ Built-in OpenXR (OpenGL but for VR Headsets)
+Main programming language
+	+ GDscript (Python-like Syntax)
+	+ C# support (Unity also use it)
+GDExtension, bole pakai language lain, tapi hilang kelajuan compile time
+	C++, Rust dll
+
+Cons
+- Smaller VR ecosystem
+- Fewer plugins/addons
+- Weaker CAD workflow (First class Support Blender)
+- Less industry adoption
+- Less documentation for advanced XR (utk kita, AI ckp cukup dah)
+- Graphics below Unreal
+- Video Tutorials are old, more READing documentation
+- Can only do what our scope needs
+	- future expansion might need Unreal
+		- tapi custom godot engine
+
+Unreal Engine
+-------------
+Pros
++ Industry standard for VR
++ Excellent graphics
++ Better CAD pipeline
+	(CAD files realistic utk model, utk kereta, bolt nut semua ada)
++ Mature VR framework
++ Large community
++ Marketplace assets
++ Better scalability
+	- Technically/Theoretically Godot bole scale tapi custom modules utk engine
+
+
+Cons
+- Much heavier
+- Longer compile times
+- Larger projects
+- Steeper learning curve
+- Higher hardware requirements
+
+AI Recommendation 
+
+Choose Godot if:
+- educational prototype
+- limited time
+- limited hardware
+- open-source preference
+- easier maintenance
+
+Choose Unreal if:
+- photorealism is important
+- CAD integration is required
+- enterprise deployment
+- large engineering models
+- industry-standard workflow

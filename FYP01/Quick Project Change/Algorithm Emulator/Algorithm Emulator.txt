@@ -1,0 +1,47 @@
+#import "@preview/polylux:0.4.0": *
+
+#set text(font: "New Computer Modern", size: 20pt)
+#set page(paper: "presentation-16-9")
+
+#slide[
+  = Algorithm Emulator 
+  == Predict execution time of algorithm
+]
+
+#slide[
+  = 1.0 Introduction
+  #v(1em)
+  - Companies might not be sure what search or sort algorithm is the best
+]
+
+#slide[
+  = Idea
+  #v(1em)
+  - Have a program with a few search and sort algorithm
+  #v(1em)
+  - Upload a db file
+  #v(1em)
+  - Program runs a few datas and draw graph to predict how much time would it take to run the whole db
+]
+
+#slide[
+  = Main Concern
+  #v(1em)
+  - Alot of different algorithms
+  #pad(left: 2em)[
+  #v(1em)
+    - Allow self plugin to add algorithm?
+  #v(1em)
+    - have field for algorithm code they already have?
+    ]
+  #pad(left: 4em)[
+  #v(1em)
+        - What if different language?
+  ]
+  #v(1em)
+  - Might be too simple?
+  #v(1em)
+  - Not much commercial value
+  #v(1em)
+  - Alot of different db types
+]
