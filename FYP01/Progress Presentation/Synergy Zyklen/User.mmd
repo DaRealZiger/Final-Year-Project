@@ -1,0 +1,11 @@
+flowchart TD
+  User[\Continue on<br>User Flowchart/]
+  Menu[/1.Wallet<br>2.Cycles/]
+  Choice{Input Choice}
+
+  Wallet[/Wallet Page/]
+  Cycles[/Cycles Page/]
+  
+  User --> Menu --> Choice
+  Choice --> |Wallet| Wallet
+  Choice --> |Cycles| Cycles

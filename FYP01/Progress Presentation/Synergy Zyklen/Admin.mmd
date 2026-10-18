@@ -1,0 +1,18 @@
+flowchart TD
+  Admin[\Continue on<br>Admin Flowchart/]
+  Menu[/1.POS<br>2.Users<br>3.Inventory<br>4.Cycles<br>5.Menu<br>6.Stats/]
+  POS[/POS Page/]
+  Users[/Users Page/]
+  Inventory[/Inventory Page/]
+  Cycles[/Cycles Page/]
+  Food[/Food Page/]
+  Stats[/Stats Page/]
+  Choice{Input Choice}
+
+  Admin --> Menu --> Choice
+  Choice --> |POS| POS
+  Choice --> |Users| Users
+  Choice --> |Inventory| Inventory
+  Choice --> |Cycles| Cycles
+  Choice --> |Food| Food
+  Choice --> |Stats| Stats

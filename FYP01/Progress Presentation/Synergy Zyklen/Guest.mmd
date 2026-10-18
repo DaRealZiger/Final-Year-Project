@@ -1,0 +1,25 @@
+flowchart TD
+  START([START])
+  Index[/Home Page/]
+
+  HaveAccount{Have Account?}
+  SignUp[/Sign Up Page/]
+  LogIn[/Log In Page/]
+
+  Identity{Is User or Admin?}
+  User[/Continue on<br>User Flowchart\]
+  Admin[/Continue on<br>Admin Flowchart\]
+
+  START --> Index
+  %% Account
+  Index --> HaveAccount
+  HaveAccount -->|No| SignUp
+  HaveAccount --> |Yes| LogIn
+
+  %% SignUp/Login
+  SignUp --> LogIn
+  LogIn --> Identity
+  
+  %% User or Admin
+  Identity --> |User| User
+  Identity --> |Admin| Admin
