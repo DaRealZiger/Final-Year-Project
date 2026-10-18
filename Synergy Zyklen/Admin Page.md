@@ -2,5 +2,6 @@
 - Check users
     - Wallet
 - Track Inventory
+- Track Cycles
 - CRUD menu
 - Stats
