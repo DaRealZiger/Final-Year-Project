@@ -1,0 +1,23 @@
+usecase-beta
+actor User(User)
+actor Admin(Admin)
+actor Guest(Guest)
+
+systemBoundary Website
+  Index(Home Page)
+  Wallet(Check Balance)
+  Cycles(Check Cycles)
+  POS(POS System)
+  Users(Check Users)
+end
+
+Guest --> Index
+
+User --> Index
+User --> Wallet
+User --> Cycles
+
+Admin --> Index
+Admin --> Cycles
+Admin --> POS
+Admin --> Users
