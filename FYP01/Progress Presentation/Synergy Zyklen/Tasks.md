@@ -5,8 +5,8 @@
 > Interview
 - [ ] Principal of Operation
 > [!NOTE]
-> Graph needs adjusting
-- [ ] Insert Use Case Diagram
+> Add paragraphs(?
+- [x] Insert Use Case Diagram
 > [!NOTE]
 > Needs adjusting
 - [ ] Use Case Specification
