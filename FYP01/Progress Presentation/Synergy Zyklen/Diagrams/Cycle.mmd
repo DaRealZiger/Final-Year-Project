@@ -2,10 +2,10 @@ flowchart TD
   START([START])
   Sale[Make Sale]
   Count["Count + (Sell Quantity)"]
-  Check{Count >= 12?}
+  Check{Count >= Cycle Size?}
   CashBack[Give CashBack]
   NewCycle[Start New Cycle]
-  2Check[Count - 12]
+  2Check[Count - Cycle Size]
   END([END])
   START --> Sale --> Count --> Check
   Check --> |TRUE| CashBack --> NewCycle --> 2Check --> Check
