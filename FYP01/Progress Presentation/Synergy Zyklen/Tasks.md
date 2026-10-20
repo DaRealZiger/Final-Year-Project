@@ -3,20 +3,16 @@
 - [ ] Feasibility Studies 
 > [!NOTE]
 > Interview
-- [ ] Principal of Operation
-> [!NOTE]
-> Add paragraphs(?
+- [x] Principal of Operation
 - [x] Insert Use Case Diagram
-> [!NOTE]
-> Needs adjusting
 - [ ] Use Case Specification
 > [!WARNING]
 > Haven't Started
-- [ ] Software Specification Details
-- [ ] Hardware Specification Details
-- [ ] Testing Methodology 
-> [!WARNING]
-> Haven't Started
+- [x] Software Specification Details
+- [~] Hardware Specification Details
+> [!NOTE]
+> Hostinger specification wait for stakeholder
+- [x] Testing Methodology 
 - [ ] Conclusion
 > [!WARNING]
 > Haven't Started
