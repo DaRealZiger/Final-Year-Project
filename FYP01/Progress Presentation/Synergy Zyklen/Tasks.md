@@ -1,17 +1,18 @@
-- [ ] Expand Objectives
-- [ ] Expand Literature Review
-- [ ] Feasibility Studies 
+- [ ] Front Page
+- [x] Expand Objectives
+- [x] Expand Literature Review
 > [!NOTE]
-> Interview
+> Unsure
+- [ ] Feasibility Studies 
+> [!IMPORTANT]
+> Discuss Interview questions
 - [x] Principal of Operation
 - [x] Insert Use Case Diagram
-- [ ] Use Case Specification
+- [x] Use Case Specification
 > [!WARNING]
-> Haven't Started
+> Have sir check
 - [x] Software Specification Details
-- [~] Hardware Specification Details
-> [!NOTE]
-> Hostinger specification wait for stakeholder
+- [x] Hardware Specification Details
 - [x] Testing Methodology 
 - [ ] Conclusion
 > [!WARNING]
