@@ -1,6 +1,8 @@
 - Categorise menu
 - Order
 - Check user wallet
+- Track Inventory
+- CRUD menu
 - Payment Method
     - Wasted
     - Cash
