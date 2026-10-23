@@ -1,0 +1,20 @@
+Today meeting agenda
+- Check cert and website proposal
+  * Focus ecommerce, no need to do certificate generator
+  * Sir Aidil akan email satu link excel
+  * Dua section --> Previous and new project
+  * If cert, can sell to GMI
+
+- Interview questions
+  * Suruh Notebook LLM as question interview
+    * Ask to be specific
+    * Any requirements?
+      + Terpulang
+      + Manager and staff, whole operation (to avoid biase)
+      + Can online, perlu gambar
+      + Letak quote atau ayat dari respondent
+        + as long as it meets objectives/problem statement
+
+[BELOW can ask during FYP02]
+- ask about laravel
+- ask about postgre
