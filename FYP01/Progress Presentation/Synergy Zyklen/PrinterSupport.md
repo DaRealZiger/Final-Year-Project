@@ -30,4 +30,13 @@ So need a bridge app (RawBTW, "Web to Bluetooth Print", JSPrintManager.js)
 1. Webpage opens a link through <a href> with intent:// or custom URL scheme (auto-open app)
 2. The app handles the bridge app yourself
 ### Issue
-Third-party app (hopefully open source)
+Third-party app (hopefully open source), unless app you make it yourself
+
+
+# Action for now
+1. Use android app "nRF Connect" 
+2. If printer appears with "Connect" option (or GATT services), then certainly BLE
+3. If printer appears as classic device and requires a PIN to pair, then its SPP
+https://youtu.be/5CggU_ViuNg?t=76 , most likely SPP it seems
+
+Can ask AI for it to try printing with Web Bluetooth API (I assume Vanilla JS)
