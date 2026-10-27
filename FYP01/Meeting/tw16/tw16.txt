@@ -1,0 +1,37 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[DONT FORGET TO TAKE PICTURE]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Agenda:
+1. Check report & slide
+
+2. Technical-wise: 
+
+Database: 
+PostGresQL: Strict, performs much better
+MySQL: Forgiving, more popular with Laravel
+
+Tech Stack: 
+* Laravel Framework 
+(Popular MySQL, supports PostGresQL)
+- Rapid development
+- Startup-friendly due to built-in batteries
+- Developer experience
+- Cost-efficiency of time and effort
+
+* ASP.net backend 
+with any frontend (Popular jquery)
+- Windows Azure/Enterprise scalability
+- High Performance
+
+
+Change title, describe what the website do 
+
+Use tailwindcss for front end
+
+Prepare  slides
+
+Costing:
+- Server
+- Ai Agent
+- Printer
