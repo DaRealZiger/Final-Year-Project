@@ -6,6 +6,10 @@
 - [ ] Feasibility Studies 
 > [!IMPORTANT]
 > Discuss Interview questions
+- [ ] Costing 
+> [!NOTE]
+> Hostinger guna plan premium as standard
+> For ai token try tngk ada x yng by month pilih paling power kalau dlm budget
 - [x] Principal of Operation
 - [x] Insert Use Case Diagram
 - [x] Use Case Specification
