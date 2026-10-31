@@ -1,0 +1,6 @@
+- [x] Use case diagram
+- [x] project objective
+- [ ] sdlc process
+- [ ] flowchart
+- [ ] figma
+- [ ] slide

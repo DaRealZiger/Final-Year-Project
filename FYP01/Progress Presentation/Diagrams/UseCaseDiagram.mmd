@@ -1,0 +1,56 @@
+usecase-beta
+actor User(User)
+actor Guest(Guest)
+actor Owner(Owner)
+actor Staff(Staff)
+
+systemBoundary "Synergy Zyklen"
+  Index(Home Page)
+
+  Registration(Sign Up)
+  Login(Log In)
+
+  Wallet(Check Balance)
+  Cycles(Check Cycles)
+
+  Users(Check Users)
+  OverallStatistics(Overall Statistics)
+  CRUDmenu(CRUD Menu)
+end
+
+systemBoundary "POS sub-domain"
+  CRUDinventory(CRUD Inventory)
+  TrackOrder(Track Order)
+  AddOrders(Add Order)
+  DailyStatistics(Daily Sales)
+  TrackInventory(Track Inventory)
+end
+
+Guest -- Index
+Guest -- Registration
+
+User -- Index
+User -- Login
+User -- Wallet
+User -- Cycles
+
+Owner -- Index
+Owner -- Login
+Owner -- Cycles
+Owner -- Users
+Owner -- OverallStatistics
+Owner -- CRUDmenu
+Owner -- CRUDinventory
+Owner -- TrackOrder
+Owner -- AddOrders
+Owner -- DailyStatistics
+Owner -- TrackInventory
+
+Staff -- Index
+Staff -- Login
+Staff -- Cycles
+Staff -- CRUDinventory
+Staff -- TrackOrder
+Staff -- AddOrders
+Staff -- DailyStatistics
+Staff -- TrackInventory

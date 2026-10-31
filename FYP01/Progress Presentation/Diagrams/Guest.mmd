@@ -1,25 +1,31 @@
 flowchart TD
   START([START])
+  END([END])
   Index[/Home Page/]
+
+  Registration{Register?}
 
   HaveAccount{Have Account?}
   SignUp[/Sign Up Page/]
   LogIn[/Log In Page/]
 
-  Identity{Is User or Admin?}
+  AccountAdmin{Account = Admin?}
+
   User[/Continue on<br>User Flowchart\]
   Admin[/Continue on<br>Admin Flowchart\]
 
   START --> Index
   %% Account
-  Index --> HaveAccount
+  Index --> Registration
+  Registration --> |No| END
+  Registration --> |Yes | HaveAccount
   HaveAccount -->|No| SignUp
   HaveAccount --> |Yes| LogIn
 
   %% SignUp/Login
   SignUp --> LogIn
-  LogIn --> Identity
+  LogIn --> AccountAdmin
   
   %% User or Admin
-  Identity --> |User| User
-  Identity --> |Admin| Admin
+  AccountAdmin -->|No| User
+  AccountAdmin --> |Yes| Admin
