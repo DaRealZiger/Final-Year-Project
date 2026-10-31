@@ -1,11 +1,18 @@
 flowchart TD
+  END([END])
   User[\Continue on<br>User Flowchart/]
-  Menu[/1.Wallet<br>2.Cycles/]
-  Choice{Input Choice}
-
+  Menu[/1.Wallet<br>2.Cycles<br>3.Log Out/]
+  Choice[Input Choice]
+  CO1{Choice = 1?}
+  CO2{Choice = 2?}
+  CO3{Choice = 3?}
   Wallet[/Wallet Page/]
   Cycles[/Cycles Page/]
   
-  User --> Menu --> Choice
-  Choice --> |Wallet| Wallet
-  Choice --> |Cycles| Cycles
+  User --> Menu --> Choice --> CO1
+  CO1 --> |Yes| Wallet
+  CO1 --> |No| CO2
+  CO2 --> |Yes| Cycles
+  CO2 --> |No| CO3
+  CO3 --> |Yes| END
+  CO3 --> |No| User

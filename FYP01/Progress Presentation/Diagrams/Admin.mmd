@@ -1,18 +1,36 @@
 flowchart TD
+  END([END])
   Admin[\Continue on<br>Admin Flowchart/]
-  Menu[/1.POS<br>2.Users<br>3.Inventory<br>4.Cycles<br>5.Menu<br>6.Stats/]
+  Menu[/1.POS<br>2.Users<br>3.Inventory<br>4.Cycles<br>5.Menu<br>6.Stats<br>7.Log Out/]
+  
+  CO1{Choice = 1?}
+  CO2{Choice = 2?}
+  CO3{Choice = 3?}
+  CO4{Choice = 4?}
+  CO5{Choice = 5?}
+  CO6{Choice = 6?}
+  CO7{Choice = 7?}
+
   POS[/POS Page/]
   Users[/Users Page/]
   Inventory[/Inventory Page/]
   Cycles[/Cycles Page/]
   Food[/Food Page/]
   Stats[/Stats Page/]
-  Choice{Input Choice}
+  Choice[Input Choice]
 
-  Admin --> Menu --> Choice
-  Choice --> |POS| POS
-  Choice --> |Users| Users
-  Choice --> |Inventory| Inventory
-  Choice --> |Cycles| Cycles
-  Choice --> |Food| Food
-  Choice --> |Stats| Stats
+  Admin --> Menu --> Choice --> CO1
+  CO1 --> |Yes| POS
+  CO1 --> |No| CO2
+  CO2 --> |Yes| Users
+  CO2 --> |No| CO3
+  CO3 --> |Yes| Inventory
+  CO3 --> |No| CO4
+  CO4 --> |Yes| Cycles
+  CO4 --> |No| CO5
+  CO5 --> |Yes| Food
+  CO5 --> |No| CO6
+  CO6 --> |Yes| Stats
+  CO6 --> |No| CO7 
+  CO7 --> |Yes| END
+  CO7 --> |No| Admin
