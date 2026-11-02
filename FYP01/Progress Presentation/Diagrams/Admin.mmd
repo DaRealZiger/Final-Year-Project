@@ -1,6 +1,6 @@
 flowchart TD
   END([END])
-  Admin[\Continue on<br>Admin Flowchart/]
+  START([START])
   Menu[/1.POS<br>2.Users<br>3.Inventory<br>4.Cycles<br>5.Menu<br>6.Stats<br>7.Log Out/]
   
   CO1{Choice = 1?}
@@ -19,7 +19,7 @@ flowchart TD
   Stats[/Stats Page/]
   Choice[Input Choice]
 
-  Admin --> Menu --> Choice --> CO1
+  START --> Menu --> Choice --> CO1
   CO1 --> |Yes| POS
   CO1 --> |No| CO2
   CO2 --> |Yes| Users
@@ -33,4 +33,4 @@ flowchart TD
   CO6 --> |Yes| Stats
   CO6 --> |No| CO7 
   CO7 --> |Yes| END
-  CO7 --> |No| Admin
+  CO7 --> |No| START

@@ -1,6 +1,6 @@
 flowchart TD
   END([END])
-  User[\Continue on<br>User Flowchart/]
+  START([START])
   Menu[/1.Wallet<br>2.Cycles<br>3.Log Out/]
   Choice[Input Choice]
   CO1{Choice = 1?}
@@ -9,7 +9,7 @@ flowchart TD
   Wallet[/Wallet Page/]
   Cycles[/Cycles Page/]
   
-  User --> Menu --> Choice --> CO1
+  START --> Menu --> Choice --> CO1
   CO1 --> |Yes| Wallet
   CO1 --> |No| CO2
   CO2 --> |Yes| Cycles

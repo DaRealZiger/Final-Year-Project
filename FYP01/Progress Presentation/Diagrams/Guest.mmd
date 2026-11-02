@@ -9,11 +9,6 @@ flowchart TD
   SignUp[/Sign Up Page/]
   LogIn[/Log In Page/]
 
-  AccountAdmin{Account = Admin?}
-
-  User[/Continue on<br>User Flowchart\]
-  Admin[/Continue on<br>Admin Flowchart\]
-
   START --> Index
   %% Account
   Index --> Registration
@@ -24,8 +19,4 @@ flowchart TD
 
   %% SignUp/Login
   SignUp --> LogIn
-  LogIn --> AccountAdmin
-  
-  %% User or Admin
-  AccountAdmin -->|No| User
-  AccountAdmin --> |Yes| Admin
+  LogIn --> END
