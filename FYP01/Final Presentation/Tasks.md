@@ -1,7 +1,13 @@
-- [ ] 1.4 Project Scope
+- [ ] Move table of figures below table of content
+- [ ] Add Chapter based on topic
 
-- [ ] 2.1.1 Primary Sources
+- [x] 1.4 Project Scope
+
+- [x] 2.1.1 Primary Sources
 - [ ] 2.1.2 Secondary Sources
+> [!NOTE]
+> Search in web for other pos system
+
 - [ ] 2.2 Product Comparison
 
 - [ ] 3.1.4 Sequence Diagram  
@@ -10,6 +16,10 @@
 - [ ] 3.2.1 Project Specification
 - [ ] 3.3 Project Feature
 - [ ] 3.4 Project Costing
+> [!NOTE]
+> Change Claude to Tablet
+> Add Phone To simulate order being sent to other device
+
 - [ ] 3.4.1 Required Items
 
 - [ ] 4.1 Testing Model
