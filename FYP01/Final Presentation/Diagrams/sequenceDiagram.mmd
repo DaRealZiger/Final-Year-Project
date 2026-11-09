@@ -1,0 +1,82 @@
+sequenceDiagram
+    actor C as Customer
+    participant Csh as Cashier
+    participant POS as POS System
+    participant WDB as Wallet Database
+    participant CT as Card Terminal
+    participant QR as QR Payment Gateway
+    participant K as Kitchen
+
+    C->>Csh: Place order
+    activate C
+    activate Csh
+    Csh->>POS: Enter order items
+    activate POS
+    POS-->>Csh: Order summary & total
+    deactivate POS
+    Csh->>C: Confirm order
+    deactivate Csh
+
+
+    opt Use Credit Balance
+        C->>Csh: Provide Email
+        activate Csh
+        Csh->> POS: Input Email
+        activate POS
+        POS->>WDB: Validate Email
+        activate WDB
+        WDB-->>POS: Display Amount Available
+        POS-->>Csh: Show Amount Available
+        Csh-->>C: Show Amount Available
+        C->>Csh: Amount to Use
+        Csh->>POS: Input Amount
+        deactivate Csh
+        POS->>C: Prompt for pin
+        C->>POS: Input Pin
+        POS->> WDB: Validate Pin
+        WDB-->>POS: Pin Correct
+        deactivate WDB
+        POS->>POS: Recalculate Total
+        POS->>Csh: New Total
+        activate Csh
+        deactivate POS
+        Csh->>C: Confirm discounted total
+        deactivate Csh
+    end
+
+    alt Cash
+        C->>Csh: Hand over cash
+        activate Csh
+        Csh->>POS: Enter cash amount
+        activate POS
+        POS-->>Csh: Change due
+        deactivate POS
+        Csh->>C: Return change
+        deactivate Csh
+    else Card
+        Csh->>CT: Input amount
+        activate Csh
+        activate CT
+        C->>CT: Tap Card
+        CT-->>Csh: Show Approved
+        deactivate Csh
+        deactivate CT
+    else QR
+        Csh->>C: Show QR + state amount
+        activate Csh
+        C->>C: Scan QR in banking app
+        C->>C: Enter amount
+        C->>QR: Pay merchant
+        activate QR
+        QR-->>C: Generate receipt
+        deactivate QR
+        C->>Csh: Show receipt
+    end
+
+    Csh->>POS: Mark order as paid
+    activate POS
+    POS-)K: Send order to kitchen
+    deactivate POS
+    Csh->>C: Hand receipt
+    deactivate Csh
+    deactivate C

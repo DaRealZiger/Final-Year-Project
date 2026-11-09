@@ -10,7 +10,11 @@
 
 - [ ] 2.2 Product Comparison
 
-- [ ] 3.1.4 Sequence Diagram  
+- [!] 3.1.4 Sequence Diagram  
+> [!WARNING]
+> Wait for sir reply
+> Add Cash Back?
+
 - [ ] 3.1.5 Activity Diagram  
 - [ ] 3.1.6 Class Diagram
 - [ ] 3.2.1 Project Specification
