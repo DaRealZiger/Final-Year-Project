@@ -22,7 +22,9 @@
 
 # Chapter 3 Project Methodology
 ## Chapter 3.1 Software Requirement Specification
-- [x] 3.1.1 SDLC Process
+- [ ] 3.1.1 SDLC Process
+> [!IMPORTANT] Change
+> Waterfall model into V model
 - [x] 3.1.2 Use Case Diagram
 - [x] 3.1.3 Use Case Specification
 - [!] 3.1.4 Sequence Diagram  
@@ -39,14 +41,14 @@
 
 ## Chapter 3.2 Project Specification
 - [x] 3.2.1 Project Specification
-- [x] 3.2.2 Software Use Specification
-- [x] 3.2.3 Hardware Use Specification
+- [ ] 3.2.2 Software Use Specification
+- [ ] 3.2.3 Hardware Use Specification
 
 ## Chapter 3.3
 - [x] 3.3 Project Feature
 ## Chapter 3.4
 - [x] 3.4 Project Costing
-- [ ] 3.4.1 Required Items
+- [x] 3.4.1 Required Items
 
 # Chapter 4 Testing Methodology
 ## Chapter 4.1
@@ -55,8 +57,10 @@
 - [~] 4.1.2 Features to be Tested
 ## Chapter 4.2 Testing Tools
 - [~] 4.2.1 Applications use for testing
-> [!NOTE]
-> Add Pytest-Playwright
+> [!IMPORTANT] Add
+> Pytest-Playwright (Replace Selenium)
+> Setrepo
+> Remove phpunit
 
 - [~] 4.2.2 Testing Type
 
@@ -75,7 +79,7 @@
 - [ ] 6.2 Recommendation
 
 # Ending
-- [ ] Reference
+- [ ] [[References]]
 - [ ] Appendix
 > [!NOTE]
 > Gantt Chart
