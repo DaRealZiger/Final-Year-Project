@@ -22,7 +22,7 @@
 
 # Chapter 3 Project Methodology
 ## Chapter 3.1 Software Requirement Specification
-- [ ] 3.1.1 SDLC Process
+- [x] 3.1.1 SDLC Process
 > [!IMPORTANT] Change
 > Waterfall model into V model
 - [x] 3.1.2 Use Case Diagram
