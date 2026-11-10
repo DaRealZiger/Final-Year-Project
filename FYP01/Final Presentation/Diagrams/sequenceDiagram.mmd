@@ -6,6 +6,7 @@ sequenceDiagram
     participant CT as Card Terminal
     participant QR as QR Payment Gateway
     participant K as Kitchen
+    participant CDB as Cycle Database
 
     C->>Csh: Place order
     activate C
@@ -74,6 +75,18 @@ sequenceDiagram
     end
 
     Csh->>POS: Mark order as paid
+    POS-)WDB: Record Order
+    activate WDB
+    WDB->>CDB: Check if Cycle Completed
+    activate CDB
+    alt Cycle Complete
+        CDB->>WDB: Award credit to cycle owner
+        CDB->>CDB: Start new cycle
+        deactivate WDB
+    else Cycle not Complete
+        CDB->>CDB: Add items to cycle
+        deactivate CDB
+    end 
     activate POS
     POS-)K: Send order to kitchen
     deactivate POS
