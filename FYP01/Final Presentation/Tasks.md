@@ -45,11 +45,7 @@
 ## Chapter 3.3
 - [x] 3.3 Project Feature
 ## Chapter 3.4
-- [~] 3.4 Project Costing
-> [!NOTE]
-> Change Claude to Tablet
-> Add Phone To simulate order being sent to other device
-
+- [x] 3.4 Project Costing
 - [ ] 3.4.1 Required Items
 
 # Chapter 4 Testing Methodology
