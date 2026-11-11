@@ -12,3 +12,6 @@
 [V-Model](https://www.geeksforgeeks.org/software-engineering/software-engineering-sdlc-v-model/)
 [PestPhp](https://pestphp.com)
 [Testing Type](https://www.geeksforgeeks.org/software-testing/types-software-testing/)
+[Manual Data entry Risks](https://www.qualitymag.com/articles/100028-the-spreadsheet-nobody-owned)
+[Math vs Database](https://www.postgresql.org/message-id/C08682BE.B30F%25sdavis2%40mail.nih.gov)
+[Cash-back and loyalty](https://www.sciencedirect.com/science/article/pii/S0148296321008857)

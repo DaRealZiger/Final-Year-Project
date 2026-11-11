@@ -10,9 +10,7 @@
 ## Chapter 2.1
 - [x] 2.1 Feasibility Studies
 - [x] 2.1.1 Primary Sources
-- [ ] 2.1.2 Secondary Sources
-> [!NOTE]
-> Search in web for other pos system
+- [x] 2.1.2 Secondary Sources
 
 ## Chapter 2.2
 - [x] 2.2 Product Comparison
@@ -22,10 +20,7 @@
 - [x] 3.1.1 SDLC Process
 - [x] 3.1.2 Use Case Diagram
 - [x] 3.1.3 Use Case Specification
-- [!] 3.1.4 Sequence Diagram  
-> [!WARNING]
-> Wait for sir reply
-
+- [x] 3.1.4 Sequence Diagram  
 - [x] 3.1.5 Activity Diagram  
 > [!WARNING]
 > I don't know anymore
