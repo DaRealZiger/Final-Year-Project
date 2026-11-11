@@ -40,9 +40,12 @@
   align: center + horizon,
   inset: (x: 3pt, y: 5pt),
   fill: (x, y) => if y == 0 { navy } else if calc.odd(y) { rgb("#f4f7fb") } else { white },
+  // THICKER, DARKER BORDERS HERE
   stroke: (x, y) => (
-    bottom: 0.4pt + rgb("#e2e8f0"),
-    left: if x >= 2 { 0.3pt + rgb("#edf2f7") } else { none },
+    bottom: 1pt + rgb("#94a3b8"), 
+    left: if x >= 2 { 0.8pt + rgb("#cbd5e1") } else { none },
+    top: if y == 0 { 1pt + rgb("#94a3b8") } else { none },
+    right: if x == n + 2 { 1pt + rgb("#94a3b8") } else { none },
   ),
   table.header(
     text(white, weight: "bold")[No],
