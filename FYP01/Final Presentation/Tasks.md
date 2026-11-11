@@ -1,5 +1,4 @@
 - [ ] Move table of figures below table of content
-- [ ] Add Chapter based on topic
 
 # Chapter 1 Introduction
 - [x] 1.1 Introduction
@@ -16,21 +15,16 @@
 > Search in web for other pos system
 
 ## Chapter 2.2
-- [!] 2.2 Product Comparison
-> [!WARNING]
-> Refine
+- [x] 2.2 Product Comparison
 
 # Chapter 3 Project Methodology
 ## Chapter 3.1 Software Requirement Specification
 - [x] 3.1.1 SDLC Process
-> [!IMPORTANT] Change
-> Waterfall model into V model
 - [x] 3.1.2 Use Case Diagram
 - [x] 3.1.3 Use Case Specification
 - [!] 3.1.4 Sequence Diagram  
 > [!WARNING]
 > Wait for sir reply
-> Add Cash Back?
 
 - [x] 3.1.5 Activity Diagram  
 > [!WARNING]
@@ -41,8 +35,8 @@
 
 ## Chapter 3.2 Project Specification
 - [x] 3.2.1 Project Specification
-- [ ] 3.2.2 Software Use Specification
-- [ ] 3.2.3 Hardware Use Specification
+- [x] 3.2.2 Software Use Specification
+- [x] 3.2.3 Hardware Use Specification
 
 ## Chapter 3.3
 - [x] 3.3 Project Feature
@@ -53,16 +47,11 @@
 # Chapter 4 Testing Methodology
 ## Chapter 4.1
 - [x] 4.1 Testing Model
-- [~] 4.1.1 Verficiation and Validation Model
-- [~] 4.1.2 Features to be Tested
+- [x] 4.1.1 Verficiation and Validation Model
+- [x] 4.1.2 Features to be Tested
 ## Chapter 4.2 Testing Tools
-- [~] 4.2.1 Applications use for testing
-> [!IMPORTANT] Add
-> Pytest-Playwright (Replace Selenium)
-> Setrepo
-> Remove phpunit
-
-- [~] 4.2.2 Testing Type
+- [x] 4.2.1 Applications use for testing
+- [x] 4.2.2 Testing Type
 
 # Chapter 5 Finding and Analysis
 ## Chapter 5.1
@@ -70,13 +59,13 @@
 - [ ] 5.1.1 User GUI System Proposed
 - [ ] 5.1.2 Admin GUI System Proposed
 ## Chapter 5.2
-- [ ] 5.2 Problem Encountered and Countermeasure
+- [x] 5.2 Problem Encountered and Countermeasure
 ## Chapter 5.3
-- [ ] 5.3 Result and discussion
+- [x] 5.3 Result and discussion
 
 # Chapter 6 Conclusion
-- [ ] 6.1 Conclusion
-- [ ] 6.2 Recommendation
+- [x] 6.1 Conclusion
+- [x] 6.2 Recommendation
 
 # Ending
 - [ ] [[References]]
